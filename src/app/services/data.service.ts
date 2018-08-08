@@ -16,7 +16,6 @@ export class DataService {
 
     const subscription = obs.pipe(debounceTime(300)).subscribe((response) => {
         console.log(response);
-        debugger;
     });
 
     subscription.unsubscribe();
